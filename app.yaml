@@ -1,0 +1,10 @@
+runtime: nodejs18
+entrypoint: node server.js
+
+
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
+  - url: /upload
+    script: auto
